@@ -13,14 +13,14 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/exps")
+@RequestMapping("/api/public/")
 @CrossOrigin
 public class ExpController {
 
     @Autowired
     private ExpService service;
 
-    @GetMapping
+    @GetMapping("exps")
     public List<Experience> getExps() {
         return service.getAllExp();
     }

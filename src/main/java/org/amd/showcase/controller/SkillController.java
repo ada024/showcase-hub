@@ -12,14 +12,14 @@ import java.util.List;
 
 
 @RestController
-@RequestMapping("/api/skills")
+@RequestMapping("/api/skills/")
 @CrossOrigin
 public class SkillController {
 
     @Autowired
     private SkillService service;
 
-    @GetMapping
+    @GetMapping("skill")
     public List<Skill> getProducts() {
         return service.getSkills();
     }
