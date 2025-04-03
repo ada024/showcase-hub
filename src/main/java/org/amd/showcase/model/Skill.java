@@ -21,5 +21,6 @@ public class Skill {
     @CreationTimestamp
     @Column(nullable = false, updatable = false)
     private LocalDateTime created;
+    private String name;
     private String skillValue;
 }
